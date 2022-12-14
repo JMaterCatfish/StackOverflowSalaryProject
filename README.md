@@ -3,9 +3,9 @@ The goal of this Notebook is to use the results of the [Stack Overflow 2022 Deve
 
 ## Analysis of RMSE
 
-The neural net provided here performed rather well relative to the SKLearn regression forest. With a RMSE of \$62.99k, the neural net's error was only 5.1% greater than the random forest's \$59.911k. And when considering the outlier dataset, the neural net did even better; a RMSE of \$3179.269k (that's $3.1 million) from the regression forest means the neural net's \$63.96k RMSE  was **49.7 times better** than the neural net's error!
+The neural net performed with staggeringly higher accuracy than the SKLearn regression forest for the outlier dataset while getting results just below the forest on the rest of the data. With a RMSE of \$62.99k, the neural net's error on the main data was only 5.1% greater than the random forest's \$59.911k. And when considering the outlier dataset, a RMSE of \$3179.269k (that's $3.1 million) from the regression forest means the neural net's \$63.96k RMSE  was **49.7 times more accurate!**
 
-Such a RMSE for the normal dataset isn't the most impressive, as $60k is a lot of money. The same value for the outlier dataset is much more impressive, considering the average TC was \$2.2 million! If the RMSE of the regression forest is even higher than the average value of the `upper` dataset, this indicates it probably can't handle the huge range of TC as well as the neural net.
+Such a RMSE for the normal dataset isn't the most impressive, as $60k is a lot of money when the maximum total compensation is confined to $550,000. The same value for the outlier dataset is much more noteworthy, considering the average TC was \$2.2 million! If the RMSE of the regression forest is even higher than the average value of the `upper` dataset, this indicates it probably didn't handle the huge range of TC as well as the neural net can.
 
 ## Next Steps
 
